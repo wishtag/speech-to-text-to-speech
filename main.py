@@ -17,7 +17,7 @@ def speak(text):
 if __name__ == '__main__':
     print("Wait until it says 'speak now'")
 
-    recorder = AudioToTextRecorder()
+    recorder = AudioToTextRecorder(language="en")
 
     while True:
         text = recorder.text()
