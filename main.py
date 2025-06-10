@@ -10,7 +10,7 @@ import string
 mixer.init(devicename="CABLE Input (VB-Audio Virtual Cable)")
 
 engine = pyttsx3.init()
-engine.setProperty('rate', 200)
+engine.setProperty('rate', 250)
 
 def generate_random_string(length=8):
     return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
